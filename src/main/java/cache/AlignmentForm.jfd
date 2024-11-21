@@ -1,0 +1,77 @@
+JFDML JFormDesigner: "5.2.1.0.138" Java: "1.8.0_31" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+			"$columnSpecs": "111dlu:grow, 48dlu:grow, 71dlu:grow"
+			"$rowSpecs": "18dlu, linegap, fill:342dlu:grow"
+		} ) {
+			name: "this"
+			addEvent( new FormEvent( "java.awt.event.ComponentListener", "componentHidden", "thisComponentHidden", true ) )
+			add( new FormContainer( "javax.swing.JSplitPane", new FormLayoutManager( class javax.swing.JSplitPane ) ) {
+				name: "splitPane1"
+				"dividerLocation": 400
+				"oneTouchExpandable": true
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+					"$columnSpecs": "111dlu:grow, default"
+					"$rowSpecs": "18dlu, 133dlu:grow, 146dlu, 30dlu:grow"
+				} ) {
+					name: "panel1"
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "searchText"
+						"toolTipText": "Enter Ensembl ID to search for"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchTextActionPerformed", true ) )
+						addEvent( new FormEvent( "java.awt.event.FocusListener", "focusGained", "searchTextFocusGained", true ) )
+						addEvent( new FormEvent( "java.awt.event.KeyListener", "keyReleased", "searchTextKeyReleased", true ) )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button1"
+						"text": "Search"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 2
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 10
+						}
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "alignmentTable"
+							"fillsViewportHeight": true
+							"cellSelectionEnabled": true
+							"surrendersFocusOnKeystroke": true
+							"autoCreateRowSorter": true
+							"selectionMode": 0
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 10
+							}
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "alignmentTableMouseClicked", true ) )
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "alignmentTableMouseReleased", true ) )
+						} )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridHeight": 3
+						"gridWidth": 2
+						"vAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+						"hAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+						"gridY": 2
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "left"
+				} )
+				add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+					name: "tabbedPane1"
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "right"
+				} )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 3
+				"gridWidth": 3
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 990, 590 )
+		} )
+	}
+}

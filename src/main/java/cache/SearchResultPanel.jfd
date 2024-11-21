@@ -1,0 +1,142 @@
+JFDML JFormDesigner: "5.2.2.0.199" Java: "1.8.0_60" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp jToolBar1::l:::x, comp jSplitPane1:::::x}"
+			"$verticalGroup": "par l {seq l {space :p::p, comp jToolBar1:::p:27:p, space :p::p, comp jSplitPane1::::539:x}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JToolBar", new FormLayoutManager( class javax.swing.JToolBar ) ) {
+				name: "jToolBar1"
+				"rollover": true
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "saveButton"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/cache/resources/document-save22.png" )
+					"focusable": false
+					"horizontalTextPosition": 0
+					"maximumSize": new java.awt.Dimension( 25, 25 )
+					"minimumSize": new java.awt.Dimension( 25, 25 )
+					"preferredSize": new java.awt.Dimension( 25, 25 )
+					"verticalTextPosition": 3
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "saveButtonActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JToolBar$Separator" ) {
+					name: "jSeparator1"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "copyButton"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/cache/resources/edit-copy22.png" )
+					"focusable": false
+					"horizontalTextPosition": 0
+					"maximumSize": new java.awt.Dimension( 25, 25 )
+					"minimumSize": new java.awt.Dimension( 25, 25 )
+					"preferredSize": new java.awt.Dimension( 25, 25 )
+					"verticalTextPosition": 3
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "copyButtonActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JToolBar$Separator" ) {
+					name: "jSeparator2"
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "showMappedTranscripts"
+					"selected": true
+					"text": "Show Mapped Transcripts"
+					"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, true )
+					"focusable": false
+					"horizontalTextPosition": 4
+					"verticalTextPosition": 3
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "showMappedTranscriptsActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JToolBar$Separator" ) {
+					name: "jSeparator3"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "statusLabel"
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JSplitPane", new FormLayoutManager( class javax.swing.JSplitPane ) ) {
+				name: "jSplitPane1"
+				"orientation": 0
+				"oneTouchExpandable": true
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {comp jScrollPane3::l::584:x}"
+					"$verticalGroup": "par l {seq l {comp jScrollPane3:::p::p, space :0:0:x}}"
+				} ) {
+					name: "jPanel1"
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "jScrollPane3"
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "resultsTable"
+							"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+								add( new java.util.Vector {
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+								} )
+								add( new java.util.Vector {
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+								} )
+								add( new java.util.Vector {
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+								} )
+								add( new java.util.Vector {
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+								} )
+							}, new java.util.Vector {
+								add( "Title 1" )
+								add( "Title 2" )
+								add( "Title 3" )
+								add( "Title 4" )
+							}, new java.util.Vector {
+								add( class java.lang.Object )
+								add( class java.lang.Object )
+								add( class java.lang.Object )
+								add( class java.lang.Object )
+							}, new java.util.Vector {
+								add( true )
+								add( true )
+								add( true )
+								add( true )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							} )
+							"maximumSize": new java.awt.Dimension( 2147483647, 805 )
+							"minimumSize": new java.awt.Dimension( 60, 805 )
+							"preferredSize": new java.awt.Dimension( 805, 805 )
+							"selectionMode": 2
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "resultsTableMouseClicked", true ) )
+							addEvent( new FormEvent( "java.awt.event.MouseMotionListener", "mouseMoved", "resultsTableMouseMoved", true ) )
+						} )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "left"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "jScrollPane1"
+					add( new FormComponent( "javax.swing.JEditorPane" ) {
+						name: "mappedTranscriptsPane"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "right"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

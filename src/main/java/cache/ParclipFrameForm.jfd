@@ -1,0 +1,143 @@
+JFDML JFormDesigner: "7.0.0.0.76" Java: "1.8.0_171" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+			"$columnSpecs": "700dlu:grow"
+			"$rowSpecs": "fill:425dlu:grow"
+		} ) {
+			name: "this"
+			"$sizePolicy": 0
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowClosed", "thisWindowClosed", true ) )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+				"$columnSpecs": "600dlu:grow"
+				"$rowSpecs": "fill:426dlu:grow"
+			} ) {
+				name: "panel1"
+				add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+					name: "tabbedPane1"
+					auxiliary() {
+						"JavaCodeGenerator.variableGetter": true
+					}
+					add( new FormComponent( "cache.DataUploadForm" ) {
+						name: "dataUploadForm1"
+					}, new FormLayoutConstraints( null ) {
+						"title": "Data Preprocessing and Upload"
+					} )
+					add( new FormComponent( "cache.AlignmentForm" ) {
+						name: "alignmentForm1"
+					}, new FormLayoutConstraints( null ) {
+						"title": "Alignments"
+					} )
+					add( new FormComponent( "cache.SequenceSearchElasticsearchForm" ) {
+						name: "sequenceSearchForm1"
+					}, new FormLayoutConstraints( null ) {
+						"title": "Search Databases"
+					} )
+					add( new FormComponent( "cache.SummaryForm" ) {
+						name: "summaryForm1"
+					}, new FormLayoutConstraints( null ) {
+						"title": "Experiment Summary"
+					} )
+					add( new FormComponent( "cache.GeneSearchForm" ) {
+						name: "geneSearchForm1"
+					}, new FormLayoutConstraints( null ) {
+						"title": "Gene Search"
+					} )
+					add( new FormComponent( "cache.SequenceSearchWithAlignmentsForm" ) {
+						name: "sequenceSearchWithAlignmentsForm1"
+					}, new FormLayoutConstraints( null ) {
+						"title": "Sequence Search"
+					} )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 1
+					"gridY": 1
+				} )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				"minimumSize": new java.awt.Dimension( 39, 17 )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu1"
+					"text": "File"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "openMenuItem"
+						"text": "Open"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "openMenuItemActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "saveMenuItem"
+						"text": "Save"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "saveMenuItemActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "saveAsMenuItem"
+						"text": "Save As.."
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "saveAsMenuItemActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "exitMenuItem"
+						"text": "Exit"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "exitMenuItemActionPerformed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu2"
+					"text": "Edit"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "cutMenuItem"
+						"text": "Cut"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cutMenuItemActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "copyMenuItem"
+						"text": "Copy"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "copyMenuItemActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "pasteMenuItem"
+						"text": "Paste"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "pasteMenuItemActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "deleteMenuItem"
+						"text": "Delete"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "deleteMenuItemActionPerformed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu3"
+					"text": "Help"
+				} )
+				add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+					name: "hSpacer1"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "status"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/cache/resources/green.png" )
+					"maximumSize": new java.awt.Dimension( 22, 22 )
+					"minimumSize": new java.awt.Dimension( 22, 22 )
+					"preferredSize": new java.awt.Dimension( 22, 22 )
+					"verticalTextPosition": 1
+					"horizontalTextPosition": 10
+					"iconTextGap": 0
+					"horizontalAlignment": 0
+					"background": &SwingColor0 new com.jformdesigner.model.SwingColor( "Button.background" )
+					"foreground": #SwingColor0
+					"opaque": true
+					"toolTipText": "Server Status: GREEN"
+				} )
+				add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+					name: "hSpacer2"
+					"maximumSize": new java.awt.Dimension( 10, 22 )
+					"minimumSize": new java.awt.Dimension( 10, 22 )
+					"preferredSize": new java.awt.Dimension( 10, 22 )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1195, 740 )
+		} )
+	}
+}

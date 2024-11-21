@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="chartLegend" prefHeight="145.0" prefWidth="245.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="cache.util.ChartLegend">
+  <children>
+    <GridPane prefWidth="245.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <Label text="Non-Redundant Read Count" textFill="DARKSALMON" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Label text="Total Read Count" textFill="#cccc00" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Label text="Mayr" textFill="BLUE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Label text="Bartel" textFill="LIME" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Label text="CAGE" textFill="MAGENTA" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <ToggleButton fx:id="nrButton" maxHeight="15.0" maxWidth="15.0" minHeight="15.0" minWidth="15.0" mnemonicParsing="false" onAction="#nrButtonAction" prefHeight="15.0" prefWidth="15.0" selected="true" text="" textFill="BLACK" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+        <ToggleButton fx:id="trButton" maxHeight="15.0" maxWidth="15.0" minHeight="15.0" minWidth="15.0" mnemonicParsing="false" onAction="#trButtonAction" prefHeight="15.0" prefWidth="15.0" selected="true" text="" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+        <ToggleButton fx:id="mayrButton" maxHeight="15.0" maxWidth="15.0" minHeight="15.0" minWidth="15.0" mnemonicParsing="false" onAction="#mayrButtonAction" prefHeight="15.0" prefWidth="15.0" selected="true" text="" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+        <ToggleButton fx:id="bartelButton" maxHeight="15.0" maxWidth="15.0" minHeight="15.0" minWidth="15.0" mnemonicParsing="false" onAction="#bartelButtonAction" prefHeight="15.0" prefWidth="15.0" selected="true" text="" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+        <ToggleButton fx:id="cageButton" maxHeight="15.0" maxWidth="15.0" minHeight="15.0" minWidth="15.0" mnemonicParsing="false" onAction="#cageButtonAction" prefHeight="15.0" prefWidth="15.0" selected="true" text="" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="162.0" minWidth="10.0" prefWidth="33.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="291.0" minWidth="10.0" prefWidth="212.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+  </children>
+</AnchorPane>

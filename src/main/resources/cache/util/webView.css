@@ -1,0 +1,16 @@
+span.highlight {
+    opacity: 0.5;
+}
+
+p.selection {
+    color: white; 
+    background: lightblue;
+}
+
+font {
+    overflow: scroll 
+}
+
+body {
+    overflow: scroll 
+}

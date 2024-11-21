@@ -1,0 +1,135 @@
+JFDML JFormDesigner: "5.2.5.0.333" Java: "1.8.0_112" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+			"$columnSpecs": "57dlu, labelcompgap, 46dlu, labelcompgap, 46dlu, labelcompgap, 56dlu, labelcompgap, 60dlu, labelcompgap, 67dlu, labelcompgap, default, labelcompgap, 73dlu, labelcompgap, 67dlu:grow"
+			"$rowSpecs": "23dlu, linegap, 20dlu, linegap, 20dlu, linegap, default, linegap, default, linegap, default, linegap, 310dlu:grow, linegap, default"
+		} ) {
+			name: "this"
+			addEvent( new FormEvent( "java.awt.event.ComponentListener", "componentHidden", "thisComponentHidden", true ) )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Search Sequence:"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "reverseComplementBox"
+				"text": "Transform to Reverse Complement"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "reverseComplementBoxActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 5
+				"gridWidth": 5
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "searchBox"
+				} )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 3
+				"gridHeight": 3
+				"gridWidth": 13
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "searchButton"
+				"text": "Search"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchButtonActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 15
+				"gridY": 5
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "polyA101Box"
+				"text": "PolyA101"
+				"selected": true
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 7
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "total101Box"
+				"text": "Total101"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 7
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "hydro1924Box"
+				"text": "Hydro19-24"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 5
+				"gridY": 7
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "totalZero101"
+				"text": "TotalZero101"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 7
+				"gridY": 7
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "exactMatchBox"
+				"text": "Exact Match"
+				"selected": true
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 9
+				"gridY": 7
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "oneMismatchBox"
+				"text": "1 Mismatch"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 11
+				"gridY": 7
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "twoMismatchBox"
+				"text": "2 Mismatches"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 13
+				"gridY": 7
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "allDistanceBox"
+				"text": "All Distances"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 15
+				"gridY": 7
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "riboPCheckBox"
+				"text": "Ribo50"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 1
+				"gridY": 9
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "cacheCheckBox"
+				"text": "PAR-CLIP"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 9
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "otherBox"
+				"text": "Other"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 5
+				"gridY": 9
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "cache.docking.DockingAlignmentDisplay" ) {
+					name: "dockingAlignmentDisplay1"
+				} )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 11
+				"gridWidth": 17
+				"gridHeight": 3
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1150, 605 )
+		} )
+	}
+}

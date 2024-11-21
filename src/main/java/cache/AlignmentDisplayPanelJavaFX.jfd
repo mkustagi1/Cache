@@ -1,0 +1,103 @@
+JFDML JFormDesigner: "5.2.0.2.112" Java: "1.8.0_20" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+			"$columnSpecs": "93dlu, 90dlu, 40dlu, 218dlu:grow, 17dlu, 18dlu, 17dlu"
+			"$rowSpecs": "22dlu, linegap, 84dlu, linegap, 96dlu, linegap, 106dlu:grow, 59dlu:grow"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JToolBar", new FormLayoutManager( class javax.swing.JToolBar ) ) {
+				name: "toolBar1"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "saveButton"
+					"maximumSize": new java.awt.Dimension( 25, 25 )
+					"minimumSize": new java.awt.Dimension( 25, 25 )
+					"preferredSize": new java.awt.Dimension( 25, 25 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/cache/resources/document-save22.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "saveButtonActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JSeparator" ) {
+					name: "separator5"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "copyButton"
+					"maximumSize": new java.awt.Dimension( 25, 25 )
+					"minimumSize": new java.awt.Dimension( 25, 25 )
+					"preferredSize": new java.awt.Dimension( 25, 25 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/cache/resources/edit-copy22.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "copyButtonActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JSeparator" ) {
+					name: "separator4"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "zoomInButton"
+					"maximumSize": new java.awt.Dimension( 25, 25 )
+					"minimumSize": new java.awt.Dimension( 25, 25 )
+					"preferredSize": new java.awt.Dimension( 25, 25 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/cache/resources/View-zoom-in.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "zoomInButtonActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JSeparator" ) {
+					name: "separator1"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "zoomOutButton"
+					"maximumSize": new java.awt.Dimension( 25, 25 )
+					"minimumSize": new java.awt.Dimension( 25, 25 )
+					"preferredSize": new java.awt.Dimension( 25, 25 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/cache/resources/View-zoom-out.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "zoomOutButtonActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JSeparator" ) {
+					name: "separator3"
+				} )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "searchTextField"
+				"toolTipText": "Enter Sequence to search for in the alignment"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 2
+				"gridY": 1
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Search"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 1
+			} )
+			add( new FormComponent( "cache.util.JavaFXBrowserChart" ) {
+				name: "javaFXBrowserChart1"
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 2
+				"gridWidth": 7
+				"gridHeight": 3
+			} )
+			add( new FormComponent( "cache.util.JavaFXMultimapperChart" ) {
+				name: "javaFXMultimapperChart1"
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 5
+				"gridWidth": 7
+				"gridHeight": 2
+			} )
+			add( new FormComponent( "cache.util.JavaFXBrowser" ) {
+				name: "javaFXBrowser1"
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 7
+				"gridWidth": 7
+				"gridHeight": 2
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 80 )
+			"size": new java.awt.Dimension( 950, 595 )
+		} )
+	}
+}

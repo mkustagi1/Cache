@@ -1,0 +1,58 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_131" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+			"$columnSpecs": "84dlu:grow, 74dlu:grow, glue, 96dlu:grow, 81dlu:grow, glue, 91dlu:grow, 96dlu:grow"
+			"$rowSpecs": "19dlu:grow, 18dlu:grow, 20dlu:grow, 21dlu:grow, 20dlu:grow, 20dlu:grow, 20dlu:grow, 24dlu:grow, 23dlu:grow, 25dlu:grow, 21dlu:grow, 22dlu, 23dlu:grow, 21dlu:grow, 26dlu:grow"
+		} ) {
+			name: "this"
+			auxiliary() {
+				"JavaCodeGenerator.customCreate": true
+				"JavaCodeGenerator.variableGetter": true
+			}
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "statusLabel"
+				"horizontalAlignment": 4
+				"font": new java.awt.Font( "Heiti TC", 0, 13 )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 5
+				"gridWidth": 3
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+				"$columnSpecs": "57dlu:grow, 41dlu:grow"
+				"$rowSpecs": "default"
+			} ) {
+				name: "panel2"
+				add( new FormComponent( "javax.swing.JToggleButton" ) {
+					name: "editButton"
+					"text": "Edit"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "editButtonActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 2
+					"gridY": 1
+				} )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 8
+				"gridY": 1
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "cache.util.TooltipTable" ) {
+					name: "dataTable"
+					"autoCreateRowSorter": true
+					"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "dataTableMouseClicked", true ) )
+				} )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 2
+				"gridWidth": 8
+				"gridHeight": 14
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1075, 615 )
+		} )
+	}
+}

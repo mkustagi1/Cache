@@ -1,0 +1,125 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_131" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+			"$columnSpecs": "515dlu:grow"
+			"$rowSpecs": "fill:default:grow"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JSplitPane", new FormLayoutManager( class javax.swing.JSplitPane ) ) {
+				name: "splitPane1"
+				"dividerLocation": 400
+				"minimumSize": new java.awt.Dimension( 990, 604 )
+				"preferredSize": new java.awt.Dimension( 990, 604 )
+				"oneTouchExpandable": true
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+					"$columnSpecs": "104dlu, labelcompgap, 51dlu:grow"
+					"$rowSpecs": "default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, fill:277dlu:grow"
+				} ) {
+					name: "panel1"
+					"minimumSize": new java.awt.Dimension( 400, 604 )
+					"preferredSize": new java.awt.Dimension( 400, 604 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "statusLabel"
+						"font": new java.awt.Font( "Heiti TC", 0, 12 )
+						"horizontalAlignment": 4
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridY": 9
+						"gridWidth": 3
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "totalMappedReads"
+						"editable": false
+						"horizontalAlignment": 4
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 3
+						"gridY": 7
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": "Total Mapped Reads"
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, -5, false )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridY": 7
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "totalMappedReadsNonRedundant"
+						"editable": false
+						"horizontalAlignment": 4
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 3
+						"gridY": 5
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": "Total Mapped Reads Non Redundant"
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, -5, false )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridY": 5
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "totalReads"
+						"editable": false
+						"horizontalAlignment": 4
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 3
+						"gridY": 3
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "Total Reads"
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, -5, false )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridY": 3
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						"minimumSize": new java.awt.Dimension( 400, 404 )
+						"preferredSize": new java.awt.Dimension( 400, 404 )
+						add( new FormComponent( "cache.util.TooltipTable" ) {
+							name: "table1"
+							"autoCreateRowSorter": true
+							"preferredScrollableViewportSize": new java.awt.Dimension( 400, 404 )
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "table1MouseClicked", true ) )
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "table1MouseReleased", true ) )
+						} )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridY": 11
+						"gridWidth": 3
+						"hAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+						"vAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "totalReadsNonRedundant"
+						"editable": false
+						"horizontalAlignment": 4
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 3
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "Total Reads Non Redundant"
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, -5, false )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "left"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane2"
+					"minimumSize": new java.awt.Dimension( 600, 604 )
+					"preferredSize": new java.awt.Dimension( 600, 604 )
+					add( new FormComponent( "cache.docking.DockingAlignmentDisplay" ) {
+						name: "dockingAlignmentDisplay1"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "right"
+				} )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 990, 605 )
+		} )
+	}
+}

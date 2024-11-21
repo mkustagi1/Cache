@@ -1,0 +1,166 @@
+JFDML JFormDesigner: "5.2.3.0.281" Java: "1.8.0_72" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp jScrollPane1::t::670:x};par l {seq {space :0:0:p, comp jToolBar1::::670:x, space :0:0:p}}"
+			"$verticalGroup": "par l {seq t {space :p:29:p, comp jScrollPane1::::451:x}};par l {seq l {space :0:0:p, comp jToolBar1:::p:27:p, space :0:0:p}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JToolBar", new FormLayoutManager( class javax.swing.JToolBar ) ) {
+				name: "jToolBar1"
+				"rollover": true
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "saveButton"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/cache/resources/document-save22.png" )
+					"focusable": false
+					"horizontalTextPosition": 0
+					"maximumSize": new java.awt.Dimension( 25, 25 )
+					"minimumSize": new java.awt.Dimension( 25, 25 )
+					"preferredSize": new java.awt.Dimension( 25, 25 )
+					"verticalTextPosition": 3
+					"toolTipText": "Save"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "saveButtonActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JToolBar$Separator" ) {
+					name: "jSeparator1"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "copyButton"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/cache/resources/edit-copy22.png" )
+					"focusable": false
+					"horizontalTextPosition": 0
+					"maximumSize": new java.awt.Dimension( 25, 25 )
+					"minimumSize": new java.awt.Dimension( 25, 25 )
+					"preferredSize": new java.awt.Dimension( 25, 25 )
+					"verticalTextPosition": 3
+					"toolTipText": "Copy"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "copyButtonActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JToolBar$Separator" ) {
+					name: "separator2"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "termsButton"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/cache/resources/gear-2.0.png" )
+					"toolTipText": "Terms"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "termsButtonActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JToolBar$Separator" ) {
+					name: "jSeparator2"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "findButton"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/cache/resources/find.png" )
+					"toolTipText": "Find"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "findButtonActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JToolBar$Separator" ) {
+					name: "separator1"
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "showBiotypesBox"
+					"text": "Show Biotypes"
+					"selected": true
+					addEvent( new FormEvent( "javax.swing.event.ChangeListener", "stateChanged", "showBiotypesBoxStateChanged", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JToolBar$Separator" ) {
+					name: "jSeparator3"
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "showAnnotationsBox"
+					"text": "Show Annotations"
+					addEvent( new FormEvent( "javax.swing.event.ChangeListener", "stateChanged", "showAnnotationsBoxStateChanged", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JToolBar$Separator" ) {
+					name: "jSeparator6"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "statusLabel"
+				} )
+				add( new FormComponent( "javax.swing.JToolBar$Separator" ) {
+					name: "jSeparator4"
+				} )
+				add( new FormComponent( "javax.swing.JToggleButton" ) {
+					name: "editButton"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/cache/resources/edit-pie.png" )
+					"toolTipText": "Edit"
+					"preferredSize": new java.awt.Dimension( 32, 26 )
+					"maximumSize": new java.awt.Dimension( 32, 26 )
+					"minimumSize": new java.awt.Dimension( 32, 26 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "editButtonActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JToolBar$Separator" ) {
+					name: "jSeparator5"
+				} )
+				add( new FormComponent( "javax.swing.JToggleButton" ) {
+					name: "filterButton"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/cache/resources/filter.png" )
+					"preferredSize": new java.awt.Dimension( 32, 26 )
+					"maximumSize": new java.awt.Dimension( 32, 26 )
+					"minimumSize": new java.awt.Dimension( 32, 26 )
+					"toolTipText": "Filter"
+					"selectedIcon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "filterButtonActionPerformed", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "jScrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "resultsTable"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+					}, new java.util.Vector {
+						add( "Title 1" )
+						add( "Title 2" )
+						add( "Title 3" )
+						add( "Title 4" )
+					}, new java.util.Vector {
+						add( class java.lang.Object )
+						add( class java.lang.Object )
+						add( class java.lang.Object )
+						add( class java.lang.Object )
+					}, new java.util.Vector {
+						add( true )
+						add( true )
+						add( true )
+						add( true )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+					"cellSelectionEnabled": true
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 670, 480 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

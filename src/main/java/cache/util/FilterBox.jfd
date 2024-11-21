@@ -1,0 +1,62 @@
+JFDML JFormDesigner: "5.2.3.0.281" Java: "1.8.0_72" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+			"$columnSpecs": "256dlu"
+			"$rowSpecs": "fill:17dlu, linegap, fill:19dlu, linegap, fill:224dlu"
+		} ) {
+			name: "this"
+			"title": "Filter Terms"
+			add( new FormContainer( "javax.swing.JToolBar", new FormLayoutManager( class javax.swing.JToolBar ) ) {
+				name: "toolBar1"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "upButton"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/cache/resources/up-small.png" )
+					"background": new java.awt.Color( 0, 0, 0, 255 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "upButtonActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JToolBar$Separator" ) {
+					name: "separator1"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "downButton"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/cache/resources/down-small.png" )
+					"background": new java.awt.Color( 0, 153, 0, 255 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "downButtonActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JToolBar$Separator" ) {
+					name: "separator2"
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "allExperimentsBox"
+					"text": "All Experiments"
+				} )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 1
+				"gridY": 1
+			} )
+			add( new FormComponent( "javax.swing.JFormattedTextField" ) {
+				name: "searchField"
+				addEvent( new FormEvent( "javax.swing.event.CaretListener", "caretUpdate", "searchFieldCaretUpdate", true ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 1
+				"gridY": 3
+				"vAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "termList"
+				} )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 1
+				"gridY": 5
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 495, 470 )
+		} )
+	}
+}

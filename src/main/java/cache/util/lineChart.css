@@ -1,0 +1,66 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 15, 2013, 4:09:42 PM
+    Author     : mk2432
+*/
+
+.chart {
+    -fx-padding: 2px;
+}
+.chart-content {
+    -fx-padding: 2px;
+    
+}
+
+.chart-title {
+  -fx-text-fill: #4682b4;
+  -fx-font-size: 1em;
+}
+
+.chart-legend {
+   -fx-background-color:  transparent;
+   -fx-padding: 2px;
+}
+ 
+.chart-legend-item-symbol{
+   -fx-background-radius: 0;
+}
+ 
+.chart-legend-item{
+    -fx-text-fill: #191970;
+}
+
+.chart-series-line {    
+    -fx-stroke-width: 2px;
+    -fx-effect: null;
+}
+ 
+.chart-series-line.series0 { -fx-stroke: #e9967a; }
+.chart-series-line.series1 { -fx-stroke: #e9967a; }
+.chart-series-line.series2 { -fx-stroke: #cccc00; }
+.chart-series-line.series3 { -fx-stroke: #cccc00; }
+.chart-series-line.series4 { -fx-stroke: #0000ff; -fx-opacity: 0.4; -fx-stroke-width: 1px;}
+.chart-series-line.series5 { -fx-stroke: #0000ff; -fx-opacity: 0.4; -fx-stroke-width: 1px;}
+.chart-series-line.series6 { -fx-stroke: #00ff00; -fx-opacity: 0.4; -fx-stroke-width: 1px;}
+.chart-series-line.series7 { -fx-stroke: #00ff00; -fx-opacity: 0.4; -fx-stroke-width: 1px;}
+.chart-series-line.series8 { -fx-stroke: #ff00ff; -fx-opacity: 0.4; -fx-stroke-width: 1px;}
+.chart-series-line.series9 { -fx-stroke: #ff00ff; -fx-opacity: 0.4; -fx-stroke-width: 1px;}
+.chart-series-line.series10 { -fx-stroke: #800080; -fx-opacity: 0.4; -fx-stroke-width: 1px;}
+.chart-series-line.series11 { -fx-stroke: #800080; -fx-opacity: 0.4; -fx-stroke-width: 1px;}
+
+.chart-line-symbol.series0 { -fx-background-color: #e9967a, white; }
+.chart-line-symbol.series1 { -fx-background-color: #e9967a, white; }
+.chart-line-symbol.series2 { -fx-background-color: #cccc00, white; }
+.chart-line-symbol.series3 { -fx-background-color: #cccc00, white; }
+.chart-line-symbol.series4 { -fx-background-color: #0000ff, white; }
+.chart-line-symbol.series5 { -fx-background-color: #0000ff, white; }
+.chart-line-symbol.series6 { -fx-background-color: #00ff00, white; }
+.chart-line-symbol.series7 { -fx-background-color: #00ff00, white; }
+.chart-line-symbol.series8 { -fx-background-color: #ff00ff, white; }
+.chart-line-symbol.series9 { -fx-background-color: #ff00ff, white; }
+.chart-line-symbol.series10 { -fx-background-color: #ff00ff, white; }
+.chart-line-symbol.series11 { -fx-background-color: #ff00ff, white; }
